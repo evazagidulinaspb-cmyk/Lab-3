@@ -431,7 +431,7 @@ public class TestBooks {
                     break;
                 }
 
-                if (choice == 2) {
+                else if (choice == 2) {
                     // Сравнение всех авторов
                     System.out.println("\n=== СРАВНЕНИЕ ВСЕХ АВТОРОВ ===");
 
@@ -444,8 +444,9 @@ public class TestBooks {
                     System.out.println("Автор с наибольшим числом страниц: " + list.topAuthorByPages());
                     System.out.println("\nСовпадают ли лидеры? " + list.compareTopAuthors());
                     break;
+                }
 
-                default:
+                else {
                     System.out.println("Неверный выбор. Попробуйте снова.");
                     break;
                 }
